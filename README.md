@@ -64,12 +64,34 @@
 	```
 	*and now edit this file  *  
 	* if not create a directory in document names PowerShell and a file called Microsoft.PowerShell_profile.ps1  *  
-	```
-	nvim $PROFILE.CurrentUserCurrentHost   
-	```
+	
+	* nvim $PROFILE.CurrentUserCurrentHost *  
 	*paste this line  *
 	
 	
 	```
-		$env:USERPROFILE\.config\powershell\user_profile.ps1
+		. $env:USERPROFILE\.config\powershell\user_profile.ps1
+	```
+
+## Installing post and setting up
+```
+	Install-Module posh-git -Scope CurrentUser -Force
+```
+
+
+```
+	Install-Module oh-my-posh -Scope CurrentUser -Force
+```
+
+	*and again open user_profile.ps1 and add these to top of the file*
+	```
+	#Prompt
+	Import-Module posh-git
+	Import-Module oh-my-posh
+	Set-PostPrompt Parado
+	```
+
+	*If got any error please install this directly*
+	```
+		Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))
 	```
