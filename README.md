@@ -1,18 +1,18 @@
-#My Powershell settup
+# My Powershell settup
 
 *
-	PreRequires:- 
-					git
-					gcc or gnu (compilers)
-					Windows Terminal
-					Powershell
-					Scoop
-					
+PreRequires:- 
+	git
+	gcc or gnu (compilers)
+	Windows Terminal
+	Powershell
+	Scoop					
 *
 
 ## Install the Hack Nerd Font
 	* Simple open ttf file and click install * 
 ## Windows Terminal Settings
+
 ```
 	enable arylic material in the tab row tab
 	set font to HACK NF font
