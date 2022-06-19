@@ -1,13 +1,11 @@
 # My Powershell settup
 
-*
-PreRequires:- 
-	git
-	gcc or gnu (compilers)
-	Windows Terminal
-	Powershell
-	Scoop					
-*
+PreRequires:-   
+	git  
+	gcc or gnu (compilers)  
+	Windows Terminal  
+	Powershell  
+	Scoop  				
 
 ## Install the Hack Nerd Font
 	* Simple open ttf file and click install * 
