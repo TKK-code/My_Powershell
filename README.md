@@ -12,36 +12,36 @@ PreRequires:-
 ## Windows Terminal Settings
 
 ```
-enable arylic material in the tab row tab
-set font to HACK NF font
-set colorscheme to One Dark
+	1. enable arylic material in the tab row tab
+	2. set font to HACK NF font
+	3. set colorscheme to One Dark
 ```
 ## Install powershell from Store
 
 ```
-change default to Powershell
-open settings.json 
-copy the whole one dark theme
-and paste it and change name some-else
-now change background #001B26
-and now change appreance themes to some-else
+	1. change default to Powershell
+	2. open settings.json 
+	3. copy the whole one dark theme
+	4. and paste it and change name some-else
+	5. now change background #001B26
+	6. and now change appreance themes to some-else
 
 ```
 
 ## Install Scoop
 
 `
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-irm get.scoop.sh | iex
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser  
+irm get.scoop.sh | iex  
 `
 
-```
-scoop install curl sudo jq
-```
+`
+scoop install curl sudo jq  
+`
 
-```
-curl 'https://api.inkdrop.app/' | jq
-```
+`
+curl 'https://api.inkdrop.app/' | jq  
+`
 
 ## Setting up powershell user profile
 
@@ -63,13 +63,13 @@ curl 'https://api.inkdrop.app/' | jq
 	*and now edit this file  *  
 	* if not create a directory in document names PowerShell and a file called Microsoft.PowerShell_profile.ps1  *  
 	
-	* nvim $PROFILE.CurrentUserCurrentHost *  
-	*paste this line  *
+> nvim $PROFILE.CurrentUserCurrentHost  
+   
+*paste this line  *
 	
-	
-	```
-		. $env:USERPROFILE\.config\powershell\user_profile.ps1
-	```
+```
+	. $env:USERPROFILE\.config\powershell\user_profile.ps1
+```
 
 ## Installing post and setting up
 ```
@@ -81,15 +81,15 @@ curl 'https://api.inkdrop.app/' | jq
 	Install-Module oh-my-posh -Scope CurrentUser -Force
 ```
 
-	*and again open user_profile.ps1 and add these to top of the file*
-	```
+*and again open user_profile.ps1 and add these to top of the file*
+```
 	#Prompt
 	Import-Module posh-git
 	Import-Module oh-my-posh
 	Set-PostPrompt Parado
-	```
+```
 
-	*If got any error please install this directly*
-	```
-		Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))
+*If got any error please install this directly*
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))
 	```
