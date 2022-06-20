@@ -1,46 +1,46 @@
 # My Powershell settup
 
 PreRequires:-   
-	git  
-	gcc or gnu (compilers)  
-	Windows Terminal  
-	Powershell  
-	Scoop  				
+	1. git  
+	2. gcc or gnu (compilers)  
+	3. Windows Terminal  
+	4. Powershell  
+	5. Scoop  				
 
 ## Install the Hack Nerd Font
-	* Simple open ttf file and click install * 
+> Simple open ttf file and click install  
 ## Windows Terminal Settings
 
 ```
-	enable arylic material in the tab row tab
-	set font to HACK NF font
-	set colorscheme to One Dark
+enable arylic material in the tab row tab
+set font to HACK NF font
+set colorscheme to One Dark
 ```
 ## Install powershell from Store
 
 ```
-	change default to Powershell
-	open settings.json 
-	copy the whole one dark theme
-	and paste it and change name some-else
-	now change background #001B26
-	and now change appreance themes to some-else
+change default to Powershell
+open settings.json 
+copy the whole one dark theme
+and paste it and change name some-else
+now change background #001B26
+and now change appreance themes to some-else
 
 ```
 
 ## Install Scoop
 
+`
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
+`
+
 ```
-	Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-	irm get.scoop.sh | iex
+scoop install curl sudo jq
 ```
 
 ```
-	scoop install curl sudo jq
-```
-
-```
-	curl 'https://api.inkdrop.app/' | jq
+curl 'https://api.inkdrop.app/' | jq
 ```
 
 ## Setting up powershell user profile
